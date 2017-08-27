@@ -1,0 +1,10 @@
+{% load static %}
+{% if all_devices %}
+    <ul>
+    {% for device in all_devices %}
+        <li>({{ device.device_count }}) {{ device.device_name }}</li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>404 Not a Valid Category</p>
+{% endif %}
