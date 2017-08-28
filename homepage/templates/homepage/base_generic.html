@@ -21,7 +21,7 @@
             {% block sidebar %}
             <ul class="sidebar-nav">
                 <li><a href="{% url 'index' %}">Home</a></li>
-                <li><a href="">NOC Inventory</a></li>
+                <li><a href="{% url 'device_categories:index' %}">NOC Inventory</a></li>
                 <li><a href="{% url 'contact_info:index' %}">Contact Info</a></li>
                 <li><a href="{% url 'network_resources:index' %}">Network Resources</a></li>
                 <li><a href="">On Call</a></li>

@@ -5,7 +5,10 @@ from django.template import loader
 
 # Create your views here.
 def index(request):
-    return HttpResponse("This is the Device Categories Page")
+    all_devices = Device.objects.all()
+    template = loader.get_template('device_categories/index.html')
+    context = {'all_devices': all_devices,}
+    return render(request, 'device_categories/index.html', context)
 
 def deviceList(request, device_type):
     all_devices = Device.objects.filter(category__device_category__iexact=device_type)
