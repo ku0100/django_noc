@@ -1,18 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<!-- {% load static %} DONT NEED TO DO THIS BECAUSE ALREADY LOADED IN HOMEPAGE??-->
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{% static 'network_resources/styles.css' %}">
-</head>
+{% extends "homepage/base.html" %}
 
+{% block title %}Network Resources{% endblock title %}
+
+{% block content %}
 <body>
-    <div class="button-container">
-        <div class="buttons">
+    <br>
+    <br>
+    <br>
+        <div class="network-resource-buttons">
             <button><a href="http://noc.umd.edu/Internal/wp/" rel="noopener" target="_blank">Word Plate</a></button>
             <button><a href="https://ncs2.net.umd.edu" rel="noopener" target="_blank">Cisco Prime</a></button>
             <button><a href="https://ise-admin1.net.umd.edu/admin/login.jsp" rel="noopener" target="_blank">Cisco ISE</a></button>
@@ -21,7 +16,5 @@
             <button><a href="https://www.mypinnaclelogin.com/umcp/" rel="noopener" target="_blank">Pinnacle</a></button>
             <button>Network Management</button>
         </div>
-    </div>
-
 </body>
-</html>
+{% endblock %}

@@ -1,18 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-{% load static %}
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="{% static 'contact_info/styles.css' %}">
-</head>
+{% extends "homepage/base.html" %}
 
+{% block title %}Contact Info{% endblock title %}
+
+{% block content %}
 <body>
+  <br>
+  <br>
+  <br>
   <div class="container-table">
-    <table> <!--centers the table-->
+    <table class="contact-table">
       <tr>
         <th>Name</th>
         <th>Title</th>
@@ -56,46 +52,59 @@
         <td><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" rel="noopener" target="_blank">cam@umd.edu</a></td>
       </tr>
       <tr>
+        <td>Puyan Dadvar</td>
+        <td>NOC Mid Engineer</td>
+        <td>301.405.2303</td>
+        <td></td>
+        <td><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" rel="noopener" target="_blank"></a></td>
+      </tr>
+      <tr>
         <td>Chauncey Moore</td>
-        <td>NOC Engineer</td>
+        <td>NOC Mid Engineer</td>
         <td></td>
         <td></td>
         <td><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" rel="noopener" target="_blank"></a></td>
       </tr>
       <tr>
         <td>Ebenezer Amare</td>
-        <td>NOC Engineer</td>
+        <td>NOC Jr. Engineer</td>
         <td>301.405.7285</td>
         <td>240.623.4037</td>
         <td><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" rel="noopener" target="_blank">eamare@umd.edu</a></td>
       </tr>
       <tr>
         <td>Ku Williams</td>
-        <td>NOC Engineer</td>
+        <td>NOC Jr. Engineer</td>
         <td>301.405.6502</td>
         <td>301.310.8039</td>
         <td><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" rel="noopener" target="_blank">kuwillia@umd.edu</a></td>
       </tr>
       <tr>
         <td>Garry Adams</td>
-        <td>NOC Engineer</td>
+        <td>NOC Jr. Engineer</td>
         <td>301.405.5719</td>
         <td>301.892.0195</td>
         <td><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" rel="noopener" target="_blank">gadams1@umd.edu</a></td>
       </tr>
       <tr>
         <td>Claire Kao</td>
-        <td>NOC Engineer</td>
+        <td>NOC Jr. Engineer</td>
         <td>301.405.2994</td>
         <td>240.858.9002</td>
         <td><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" rel="noopener" target="_blank">clairek@umd.edu</a></td>
       </tr>
       <tr>
         <td>Adam Bensimhon</td>
-        <td>NOC Engineer</td>
+        <td>NOC Jr. Engineer</td>
         <td></td>
         <td></td>
         <td><a href="https://mail.google.com/mail/u/0/#inbox?compose=new" rel="noopener" target="_blank">abensimh@umd.edu</a></td>
       </tr>
     </table>
   </div>
+  <br>
+  <div class="edit-button">
+    <button><a href="">Edit Contact Info</a></button>
+  </div>
+</body>
+{% endblock %}

@@ -1,17 +1,128 @@
+/* Main Template Styling */
+
 body {
     background-color: #191919;
+    height: 100%;
 }
-
 li {
-    list-style: none;
+    float: left;
+    border-right: 1px solid #bbb;
+}
+li>a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li>a:hover {
+    background-color: #111111;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
-.container-fluid {
-    background-color: #cccccc;
-}
-
-.sidebar-nav {
-    margin-top: 20px;
+.header-nav {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    list-style: none;
+    overflow: hidden;
+    background-color: #333333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.active {
+    background-color: #4CAF50;
+}
+
+.footer-container {
+    font-weight: bold;
+    color: white;
+}
+
+/* Homepage Styling */
+.homepage-container {
+    background-image: url("Mckeldin.jpg");
+    height: 100vh;  /* vh = viewport height */
+    width: 100vw;   /* vw = viewport width */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+/* Inventory Management Page Styling*/
+
+.inventory-table {
+    margin: 0px auto;
+    width: 60%;
+    padding: 5px;
+}
+.inventory-table th {
+    background-color: #C8102E;
+    color: #000000;
+}
+.inventory-table, td {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.inventory-table th, td {
+    border: 1px solid #FFCD00;
+    text-align: center;
+}
+.footer-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+.edit-button {
+    text-align: center;
+}
+
+/* Contact Info Page Styling */
+
+.contact-table {
+    margin: 0px auto;
+    width: 70%;
+    padding: 5px;
+}
+.contact-table th {
+    background-color: #C8102E;
+    color: #000000;
+}
+.contact-table, td {
+    background-color: #000000;
+    color: #FFFFFF;
+}
+.contact-table th, td {
+    border: 1px solid #FFCD00;
+    text-align: center;
+}
+
+/* Network Resources Styling */
+
+.network-resource-buttons {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+}
+.network-resource-buttons>button {
+    width: 200px;
+    height: 100px;
+    margin: 2.0px 0;
+    background-color: #FFCD00;
+}
+.network-resource-buttons>button>a {
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 20%;
+    color: #000000;
+}
+.network-resource-buttons>button:hover {
+    background-color: #C8102E;
+    font-weight: bold;
+    color: #000000;
 }
