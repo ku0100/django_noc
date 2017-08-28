@@ -76,9 +76,6 @@ li>a:hover {
     width: 100%;
     text-align: center;
 }
-.edit-button {
-    text-align: center;
-}
 
 /* Contact Info Page Styling */
 
@@ -124,5 +121,29 @@ li>a:hover {
 .network-resource-buttons>button:hover {
     background-color: #C8102E;
     font-weight: bold;
+    color: #000000;
+}
+
+/* Misc Styles */
+.edit-button {
+    text-align: center;
+}
+.edit-button>button {
+    text-align: center;
+    background-color: #333333;
+    text-decoration: none;
+}
+.edit-button>button>a {
+    text-decoration: none;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+}
+.edit-button>button:hover {
+    background-color: #FFCD00;
+    color: #000000;
+}
+.edit-button>button>a:hover {
+    text-decoration: none;
     color: #000000;
 }
