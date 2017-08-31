@@ -23,7 +23,6 @@ urlpatterns = [
     url(r'^homepage/', include('homepage.urls')),
     url(r'^network_resources/', include('network_resources.urls', namespace='network_resources')),
     url(r'^device_categories/', include('device_categories.urls', namespace='device_categories')),
-    url(r'^device_inventory/', include('device_inventory.urls', namespace='device_inventory')),
     url(r'^on_call/', include('on_call.urls', namespace='on_call')),
     url(r'^contact_info/', include('contact_info.urls', namespace='contact_info')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

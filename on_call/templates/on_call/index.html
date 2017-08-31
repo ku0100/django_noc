@@ -1,0 +1,24 @@
+{% extends "homepage/base.html" %}
+
+{% block title %}On Call{% endblock title %}
+
+{% block content %}
+<body>
+    <div class="oncall-container">
+        <h2>Almost all on-call situations will be regarding down devices</h2>
+        <ol>SOP
+            <li>Reply to the email and let NOC know you are investigating</li>
+            <li>Check Slack for any communication</li>
+            <li>Check Maintenance Calendar/Emails for any scheduled maintenance</li>
+            <li>Verify with Work Control (x52222) for any unscheduled/scheduled maintenance</li>
+            <li>Determine whether there is a UPS associated with the device using the <a href="{% url 'network_resources:index' %}">WP-Hubs file</a></li>
+            <li>Determine if there are any associated UPS alarm(s) in <a href="{% url 'network_resources:index' %}">Sparky</a></li>
+            <li>Decide whether you need to come in to investigate further</li>
+                <ul>
+                    <li>Determine the purpose of the switch (i.e. if it is 360-press-sw1, we know it is probably not critical and can wait until the morning)</li>
+                    <li></li>
+                </ul>
+        </ol>
+    </div>
+</body>
+{% endblock %}

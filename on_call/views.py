@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def index(request):
-    return HttpResponse("This is the Contact Information Page")
+    return render(request, 'on_call/index.html', context={})

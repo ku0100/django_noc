@@ -34,7 +34,6 @@ INSTALLED_APPS = [
     'homepage.apps.HomepageConfig',
     'network_resources.apps.NetworkResourcesConfig',
     'device_categories.apps.DeviceCategoriesConfig',
-    'device_inventory.apps.DeviceInventoryConfig',
     'on_call.apps.OnCallConfig',
     'contact_info.apps.ContactInfoConfig',
     'django.contrib.admin',
